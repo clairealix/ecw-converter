@@ -24,7 +24,7 @@ Dockerised python scripts & Nextflow pipeline for converting ecw files to either
 
 ## Motivation
 
-The scripts have been used for converting a stream ecw file images from [Denmark aerial imagery source site](https://download.kortforsyningen.dk/content/geodanmark-ortofoto-blokinddelt) into coggs (which is a very high compute process).
+The scripts have been used for converting a stream ecw file images from [Denmark aerial imagery source site](https://download.kortforsyningen.dk/content/geodanmark-ortofoto-blokinddelt) into COGs (which is a very high compute process).
 
 Converting to full COGs is far better than creating regular GeoTiffs. The key benefit of a COG is that it is possible to get only a section of the image if required, rather than downloading the entire file. When working with large files and doing analysis on/viewing a specific section of the image, this becomes incredibly beneficial.
 (There are also further differences)
