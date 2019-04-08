@@ -26,7 +26,7 @@ Dockerised python scripts & Nextflow pipeline for converting ecw files to either
 
 The scripts have been used for converting a stream ecw file images from [Denmark aerial imagery source site](https://download.kortforsyningen.dk/content/geodanmark-ortofoto-blokinddelt) into COGs (which is a very high compute process).
 
-Converting to full COGs is far better than creating regular GeoTiffs. The key benefit of a COG is that it is possible to get only a section of the image if required, rather than downloading the entire file. When working with large files and doing analysis on/viewing a specific section of the image, this becomes incredibly beneficial.
+Converting to full COGs is far better than creating regular Geotiffs. The key benefit of a COG is that it is possible to get only a section of the image if required, rather than downloading the entire file. When working with large files and doing analysis on/viewing a specific section of the image, this becomes incredibly beneficial.
 (There are also further differences)
 
 
@@ -59,7 +59,7 @@ Dependencies for the scripts such as GDAL with .ecw drivers & Python are also in
 
 The docker image includes the following scripts:
 - [`ecw_to_cog.sh`](ecw_converter/ecw_to_cog.sh) bash wrapper script to unzip files the input files and then run the scripts below
-- [`ecw_convert_2_cog.py`](ecw_converter/ecw_convert_2_cog.py) scripts for converting .ecw files to both COGs and GeoTiffs. There are two gdal_translate processes. Without the second process, you will NOT create a valid COG
+- [`ecw_convert_2_cog.py`](ecw_converter/ecw_convert_2_cog.py) scripts for converting .ecw files to both COGs and Geotiffs. There are two gdal_translate processes. Without the second process, you will NOT create a valid COG
 - [`validate_cog.py`](ecw_converter/validate_cog.py) validate whether a COG is a valid, fully compliant COG
 
 ### (Re)building the Docker image
