@@ -1,6 +1,6 @@
 # ecw-converter
 
-Dockerised python scripts & Nextflow pipeline for converting ecw files to either geotiffs or Cloud Optimised Geotiffs (COGs).
+Dockerised python scripts & Nextflow pipeline for converting ecw files to either Geotiffs or Cloud Optimised(COGs).
 
 - [Motivation](https://github.com/lifebit-ai/ecw-converter#motivation)
 - [Quick Run](https://github.com/lifebit-ai/ecw-converter#quick-run)
